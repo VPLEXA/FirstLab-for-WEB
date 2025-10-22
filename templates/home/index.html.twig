@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Symfony Lab - Главная</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .link-card .emoji {
+            font-size: 3em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .link-card .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .link-card .description {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Symfony Lab</h1>
+        <p class="subtitle">Лабораторная работа №1 по Symfony</p>
+        
+        <div style="margin: 20px 0;">
+            <span class="badge">Symfony 6.4</span>
+            <span class="badge">PHP 8.1+</span>
+            <span class="badge">Twig 3.x</span>
+        </div>
+        
+        <div class="links">
+            <a href="/about" class="link-card">
+                <span class="emoji">👤</span>
+                <div class="title">О студенте</div>
+                <div class="description">Задание 2</div>
+            </a>
+            
+            <a href="/not-found" class="link-card">
+                <span class="emoji">❌</span>
+                <div class="title">404 Страница</div>
+                <div class="description">Задание 3</div>
+            </a>
+            
+            <a href="/blog/1" class="link-card">
+                <span class="emoji">📝</span>
+                <div class="title">Блог</div>
+                <div class="description">Задание 4</div>
+            </a>
+            
+            <a href="/method" class="link-card">
+                <span class="emoji">🌐</span>
+                <div class="title">HTTP Method</div>
+                <div class="description">Задание 5</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
