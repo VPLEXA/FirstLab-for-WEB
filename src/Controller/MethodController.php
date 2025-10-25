@@ -96,30 +96,6 @@ class MethodController extends AbstractController
                 
                 <div class="method">%s</div>
                 
-                <div class="info">
-                    <h3>Дополнительная информация:</h3>
-                    <div class="info-row">
-                        <span class="label">URI:</span> %s
-                    </div>
-                    <div class="info-row">
-                        <span class="label">Host:</span> %s
-                    </div>
-                    <div class="info-row">
-                        <span class="label">IP адрес:</span> %s
-                    </div>
-                    <div class="info-row">
-                        <span class="label">User Agent:</span> %s
-                    </div>
-                </div>
-                
-                <div class="test-form">
-                    <h3>Протестировать другие HTTP методы:</h3>
-
-                    <p>Используйте curl или Postman для тестирования других методов:</p>
-                    <pre>curl -X POST http://localhost:8000/method</pre>
-                    <pre>curl -X PUT http://localhost:8000/method</pre>
-                    <pre>curl -X DELETE http://localhost:8000/method</pre>
-                </div>
             </div>
         </body>
         </html>',
